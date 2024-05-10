@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var map = L.map('map').setView([37.7749, -122.4194], 13); 
+    var map = L.map('map').setView([35.77011,-81.55876], 13); 
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var routingControl = L.Routing.control({
         waypoints: [
-            L.latLng(37.7749, -122.4194), 
-            L.latLng(37.7892, -122.4101)  
+            L.latLng(35.77011,-81.55876), 
+            L.latLng(35.77350,-81.54649)  
         ],
         routeWhileDragging: true,
         geocoder: L.Control.Geocoder.nominatim()
